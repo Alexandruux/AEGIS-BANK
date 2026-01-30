@@ -1,0 +1,214 @@
+/* =========================
+   RESET / BASE
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* =========================
+   LAYOUT GLOBAL
+========================= */
+
+.phone {
+  width: 100%;
+  max-width: 390px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* contrainte no-scroll */
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__burger {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.header__burger span {
+  width: 22px;
+  height: 2px;
+  background-color: #222;
+  border-radius: 2px;
+}
+
+.header__logo {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.logo-aegis {
+  color: #b24b22;
+}
+
+.logo-bank {
+  color: #111;
+}
+
+.header__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #b24b22;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #e0e0e0;
+  color: #111;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  line-height: 1.1;
+  color: #2b2b2b;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #4a4a4a;
+  max-width: 300px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background-color: #e0e0e0;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.card--sale h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta {
+  text-decoration: none;
+  background-color: #b24b22;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  min-width: 260px;
+  text-align: center;
+}
+
+
+/* =========================
+   FOOTER / SOCIAL
+========================= */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.social {
+  display: flex;
+  gap: 14px;
+}
+
+/* Icônes sociales — sans cercle */
+.social__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+}
+
+/* 🔑 CORRECTION CLÉ POUR BLUESKY (ratio respecté) */
+.social__icon svg {
+  width: 22px;
+  height: auto;        /* évite toute déformation */
+  max-height: 22px;   /* garde une taille cohérente */
+  fill: #1f1f1f;
+}
+
+.social__icon:hover svg {
+  fill: #b24b22;
+}
+
+.footer__legal {
+  cursor: pointer;
+}
