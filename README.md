@@ -2,6 +2,7 @@
  La Neobanque Éthique et Transparente
 
 📱 Landing Page – Projet Formation Conception Web
+
 📌 Description
 
 Ce projet a été réalisé dans le cadre de ma formation en Conception Web / UX-UI.
