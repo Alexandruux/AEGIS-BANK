@@ -61,7 +61,3 @@ Respect de contraintes techniques strictes
 
 Traduction d’un brief en solution visuelle
 
-🎓 Contexte de formation
-
-Ce projet fait partie de mon parcours en formation de Concepteur Web / UX-UI (2 ans).
-Il s’agit d’un exercice individuel visant à simuler un cas client réel.
